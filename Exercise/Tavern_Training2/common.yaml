@@ -1,0 +1,10 @@
+---
+name: test includes
+description: used for common parameters
+
+variables:
+  environment:
+    url: https://flasktraining.herokuapp.com
+    path: /api/v1/resources/books
+    command: /all
+

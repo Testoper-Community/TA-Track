@@ -1,0 +1,14 @@
+test_name: Get some domain data from the JSON placeholder API
+
+stages:
+  - &reuse
+  - name: Make sure we have the right status code
+    request:
+      url: "{environment.url}{environment.path}{environment.command}"
+      method: GET
+    response:
+      verify_response_with:
+        function: library.helper:print_log
+      save:
+        json:
+          first_val: author
