@@ -1,0 +1,14 @@
+---
+name: test includes
+description: used for common parameters
+
+variables:
+  prodenvironment:
+    username: xxxxx
+    password: xxxxx
+    authorization: xxxx
+
+  devenvironment:
+    username: xxxxx
+    password: xxxxx
+    authorization: xxxx
