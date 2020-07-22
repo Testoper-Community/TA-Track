@@ -1,0 +1,26 @@
+action: GLOB, msg: packaging
+cwd: C:\Git\TA-Track\Exercise\Tavern_Training
+cmd: 'c:\users\covid19\appdata\local\programs\python\python37\python.exe' setup.py sdist --formats=zip --dist-dir '.tox\dist'
+running sdist
+running check
+warning: check: missing required meta-data: version, url
+
+warning: check: missing meta-data: if 'author' supplied, 'author_email' must be supplied too
+
+warning: sdist: manifest template 'MANIFEST.in' does not exist (using default file list)
+
+warning: sdist: standard file not found: should have one of README, README.txt, README.rst
+
+writing manifest file 'MANIFEST'
+creating Tavern_Training-0.0.0
+creating Tavern_Training-0.0.0\tests
+making hard links in Tavern_Training-0.0.0...
+hard linking setup.py -> Tavern_Training-0.0.0
+hard linking tests\__init__.py -> Tavern_Training-0.0.0\tests
+creating '.tox\dist\Tavern_Training-0.0.0.zip' and adding 'Tavern_Training-0.0.0' to it
+adding 'Tavern_Training-0.0.0'
+adding 'Tavern_Training-0.0.0\tests'
+adding 'Tavern_Training-0.0.0\PKG-INFO'
+adding 'Tavern_Training-0.0.0\setup.py'
+adding 'Tavern_Training-0.0.0\tests\__init__.py'
+removing 'Tavern_Training-0.0.0' (and everything under it)
