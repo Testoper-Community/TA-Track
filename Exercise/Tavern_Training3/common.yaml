@@ -1,0 +1,11 @@
+---
+name: test includes
+description: used for common parameters
+
+variables:
+  environment:
+    url: http://api.tvmaze.com/shows/139
+    path: /api/v1/resources/books
+    command: /all
+    success_status_code: 200
+

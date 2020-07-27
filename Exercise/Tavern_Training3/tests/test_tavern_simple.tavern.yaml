@@ -1,0 +1,94 @@
+---
+test_name: Get some domain data from the JSON placeholder API
+marks:
+  - tvmaze
+  - all
+includes:
+  - !include ..\common.yaml
+
+stages:
+  - name: Make sure we have the right status code
+    request:
+      url: http://api.tvmaze.com/shows/139
+      headers:
+        $ext:
+          function: library.helper:headers
+      method: GET
+    response:
+      status_code:
+        - 200
+        - 404
+      verify_response_with:
+        function: library.helper:print_log
+      json:
+        name: Girls
+      save:
+        json:
+          show_name: name
+
+
+  - name: Make sure we have the right status code
+    request:
+      url: http://api.tvmaze.com/singlesearch/shows?q="{show_name:s}"
+      method: GET
+    response:
+      status_code:
+        - 200
+        - 404
+      verify_response_with:
+        function: library.helper:print_log
+      json:
+        id: 139
+
+---
+test_name: Get some domain data from the JSON placeholder API
+marks:
+  - tvmazepost
+  - all
+stages:
+  - name: Make sure we have the right status code
+    request:
+      url: https://api.tvmaze.com/v1/auth/start
+      method: POST
+      json: !include sam.json
+    response:
+      status_code:
+        - 200
+        - 404
+      verify_response_with:
+        function: library.helper:print_log
+      json:
+        name: Not Found
+
+---
+test_name: Get some domain data from the JSON placeholder API
+marks:
+  - tvmaze
+  - all
+  - parametrize:
+        key: id
+        vals:
+          - 140
+          - 141
+includes:
+  - !include ..\common.yaml
+
+stages:
+  - name: Make sure we have the right status code
+    request:
+      url: http://api.tvmaze.com/shows/{id}
+      headers:
+        $ext:
+          function: library.helper:headers
+      method: GET
+    response:
+      status_code:
+        - 200
+        - 404
+      verify_response_with:
+        function: library.helper:print_log
+      json:
+        name: {:s}
+      save:
+        json:
+          show_name: name
