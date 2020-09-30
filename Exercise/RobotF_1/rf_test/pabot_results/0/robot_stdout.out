@@ -1,0 +1,36 @@
+==============================================================================
+Rf Test                                                                       
+==============================================================================
+Rf Test.Testsuite                                                             
+==============================================================================
+Rf Test.Testsuite.Rf Demo                                                     
+==============================================================================
+Verify Login                                                          | PASS |
+------------------------------------------------------------------------------
+Verify Login2                                                         | PASS |
+------------------------------------------------------------------------------
+Verify Multiple Logins                                                | FAIL |
+Several failures occurred:
+
+1) UnexpectedAlertPresentException: Alert Text: Wrong password.
+Message: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=85.0.4183.121)
+
+
+2) UnexpectedAlertPresentException: Alert Text: User does not exist.
+Message: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=85.0.4183.121)
+------------------------------------------------------------------------------
+Rf Test.Testsuite.Rf Demo                                             | FAIL |
+3 critical tests, 2 passed, 1 failed
+3 tests total, 2 passed, 1 failed
+==============================================================================
+Rf Test.Testsuite                                                     | FAIL |
+3 critical tests, 2 passed, 1 failed
+3 tests total, 2 passed, 1 failed
+==============================================================================
+Rf Test                                                               | FAIL |
+3 critical tests, 2 passed, 1 failed
+3 tests total, 2 passed, 1 failed
+==============================================================================
+Output:  C:\Git\rf_test\pabot_results\0\output.xml
