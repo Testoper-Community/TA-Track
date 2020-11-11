@@ -5,7 +5,7 @@ Rf Test.Testsuite
 ==============================================================================
 Rf Test.Testsuite.Rf Demo                                                     
 ==============================================================================
-Verify Login                                                          | PASS |
+Verify Login2                                                         | PASS |
 ------------------------------------------------------------------------------
 Rf Test.Testsuite.Rf Demo                                             | PASS |
 1 critical test, 1 passed, 0 failed
@@ -19,4 +19,4 @@ Rf Test                                                               | PASS |
 1 critical test, 1 passed, 0 failed
 1 test total, 1 passed, 0 failed
 ==============================================================================
-Output:  C:\Git\TA-Track\Exercise\RobotF_1\rf_test\pabot_results\0\output.xml
+Output:  C:\Git\TA-Track\Exercise\RobotF_1\rf_test\pabot_results\1\output.xml
